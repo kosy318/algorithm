@@ -15,12 +15,12 @@ int main() {
 		cin >> cost[i][0] >> cost[i][1] >> cost[i][2];
 	
 	vector<vector<int>> dp(N, vector<int>(3));
-	for (int i = 0; i < 3; i++) { // Ã¹¹øÂ° ÁýÀÌ i¹ø »öÀ» ¼±ÅÃÇßÀ» ¶§
+	for (int i = 0; i < 3; i++) { // ì²«ë²ˆì§¸ ì§‘ì´ ië²ˆ ìƒ‰ì„ ì„ íƒí–ˆì„ ë•Œ
 		dp[0][i] = cost[0][i];
 		for (int j = 0; j < 3; j++)
 			if (j != i) dp[0][j] = INT_MAX;
 		
-		for (int j = 1; j < N; j++) { // ³ª¸ÓÁö Áý »ö ¼±ÅÃ
+		for (int j = 1; j < N; j++) { // ë‚˜ë¨¸ì§€ ì§‘ ìƒ‰ ì„ íƒ
 			if((dp[j][0] = cost[j][0] + min(dp[j - 1][1], dp[j - 1][2])) < 0)
 				dp[j][0] = INT_MAX;
 			if ((dp[j][1] = cost[j][1] + min(dp[j - 1][0], dp[j - 1][2])) < 0)
