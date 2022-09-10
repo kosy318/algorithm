@@ -6,3 +6,5 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 072 gold4 연구소 : https://www.notion.so/14502-ed1647c2fd6e475980d6f9b03c1153cb
 - 073 gold3 내리막길 : https://www.notion.so/1520-51d61f8a11824ff78e11811533390caf
 - 074 gold4 빙산 : https://www.notion.so/2573-457813a27e184389b2829f041d6cfcd2
+- 075 gold4 벽 부수고 이동하기 : https://www.notion.so/2206-c5136ed7bf4e4dbf96c846c340b86ef9
+- 076 gold3 나무 재태크 : https://www.notion.so/16235-5b56f5444ab94d9d858aab3eb76ffc4e
