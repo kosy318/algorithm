@@ -32,8 +32,9 @@ void melt(vector<vector<bool>> copied) {
 				copied[nx][ny] = false;
 				cheese -= 1;
 			}
-			else 
+			else {
 				que.push({ nx, ny });
+			}
 		}
 	}
 	board = copied;
