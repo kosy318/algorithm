@@ -10,3 +10,4 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 076 gold3 나무 재태크 : https://www.notion.so/16235-5b56f5444ab94d9d858aab3eb76ffc4e
 - 077 gold3 ACM Craft : https://www.notion.so/1005-ACM-Craft-1c735ed533e74dba849b3c62125e66b7
 - 078 gold3 줄세우기 : https://www.notion.so/2252-9f629e304df04bf3a694527eda64346a
+- 079 gold3 파티 : https://www.notion.so/1238-d031c486c9254d7aa1b387b69d6f00f4
