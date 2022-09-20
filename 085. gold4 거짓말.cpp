@@ -50,11 +50,6 @@ int main() {
 		knows[temp] = true;
 	}
 
-	if (knows.size() == 0) { // 아는 사람이 한명도 없으면 모든 파티에서 거짓말 가능
-		cout << answer;
-		return 0;
-	}
-
 	for (int i = 0; i < P; i++) {
 		int cnt;
 		cin >> cnt;
@@ -66,7 +61,7 @@ int main() {
 	}
 
 	// 아는 사람이 속한 파티에서는 거짓말 못함
-	// 아는 사람이 속한 파티의 사람들은 진실을 알게됨 -> 재귀
+	// 아는 사람이 속한 파티의 사람들은 진실을 알게됨
 	know_truth(knows, parties);
 
 	cout << answer << endl;
