@@ -15,3 +15,4 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 080 gold4 치즈 : https://www.notion.so/2636-16476cdcd0124108b61b3ee9399c174e
 - 081 gold3 치즈 : https://www.notion.so/2638-15b827ab85d2433ab99e511277e0f624
 - 083 gold3 우주 탐사선 : https://www.notion.so/17182-945b15c411674632801c151f4b724be7
+- 084 gold2 문제집 : https://www.notion.so/1766-24ed20618fd740ca8bbc816c043b6990
