@@ -16,3 +16,59 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 081 gold3 치즈 : https://www.notion.so/2638-15b827ab85d2433ab99e511277e0f624
 - 083 gold3 우주 탐사선 : https://www.notion.so/17182-945b15c411674632801c151f4b724be7
 - 084 gold2 문제집 : https://www.notion.so/1766-24ed20618fd740ca8bbc816c043b6990
+
+```
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+vector<bool> visited;
+vector<vector<pair<int, int>>> tree;
+int V, answer = -1;
+
+void dfs(int cur, int total=0, int cnt=1) {
+	// if (total == 0) visited = vector<bool>(V + 1, false);
+	if (answer < total) answer = total;
+	if (cnt == V) return;
+
+	for (auto vp : tree[cur]) {
+		int node = vp.first;
+		int dis = vp.second;
+
+		if (visited[node]) continue;
+		visited[node] = true;
+		dfs(node, total + dis, cnt+1);
+		visited[node] = false;
+	}
+}
+
+int main() {
+	cin >> V;
+
+	tree = vector<vector<pair<int, int>>>(V + 1);
+
+	for (int i = 1; i <= V; i++) {
+		int node, dis;
+		int from;
+		cin >> from;
+		while (true) {
+			cin >> node;
+			if (node == -1) break;
+			cin >> dis;
+
+			tree[from].push_back({ node, dis });
+		}
+	}
+
+	visited = vector<bool>(V + 1, false);
+	for (int i = 1; i <= V; i++) {
+		visited[i] = true;
+		dfs(i);
+		visited[i] = false;
+	}
+
+	cout << answer << endl;
+}
+```
