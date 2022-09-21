@@ -18,3 +18,4 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 084 gold2 문제집 : https://www.notion.so/1766-24ed20618fd740ca8bbc816c043b6990
 - 085 gold4 거짓말 : https://www.notion.so/1043-105c482b205d48a3af2a59b90c4d3610
 - 086 gold2 트리의 지름 : https://www.notion.so/1167-0eabe11bbf5f41729278b51f36d5aced
+- 087 gold4 특정한 최단 경로 : https://www.notion.so/1504-a4e404d0dd31449384564809bb924726
