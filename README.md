@@ -16,3 +16,5 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 081 gold3 치즈 : https://www.notion.so/2638-15b827ab85d2433ab99e511277e0f624
 - 083 gold3 우주 탐사선 : https://www.notion.so/17182-945b15c411674632801c151f4b724be7
 - 084 gold2 문제집 : https://www.notion.so/1766-24ed20618fd740ca8bbc816c043b6990
+- 085 gold4 거짓말 : https://www.notion.so/1043-105c482b205d48a3af2a59b90c4d3610
+- 086 gold2 트리의 지름 : https://www.notion.so/1167-0eabe11bbf5f41729278b51f36d5aced
