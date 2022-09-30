@@ -21,3 +21,8 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 087 gold4 특정한 최단 경로 : https://www.notion.so/1504-a4e404d0dd31449384564809bb924726
 - 088 silver1 RGB거리 : https://www.notion.so/1149-RGB-f5dd140d00da42b291242bba4a46b69e
 - 090 gold5 파이프 옮기기 1 : https://www.notion.so/17070-1-8fe0cc2c0518485b9fadd4dee7774525
+- 091 gold3 크게 만들기 : https://www.notion.so/2812-0de55390e2a444ce9c68aa5d8edf8328
+- 092 gold5 동전 2 : https://www.notion.so/2294-2-27680f9970b44522a2d8f2321354a414
+- 093 D4 보급로 : https://www.notion.so/SWEA1249-3eff5a114e1a43d5aacf7a6e22dd7e55
+- 094 gold5 내려가기 : https://www.notion.so/2096-8c7b85a304a74921bc105555aa7f3533
+- 095 silver2 가장 긴 증가하는 부분 수열 : https://www.notion.so/11053-45a07028973c4edf91290793a5f73b23
