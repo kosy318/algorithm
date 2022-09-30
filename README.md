@@ -26,3 +26,4 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 093 D4 보급로 : https://www.notion.so/SWEA1249-3eff5a114e1a43d5aacf7a6e22dd7e55
 - 094 gold5 내려가기 : https://www.notion.so/2096-8c7b85a304a74921bc105555aa7f3533
 - 095 silver2 가장 긴 증가하는 부분 수열 : https://www.notion.so/11053-45a07028973c4edf91290793a5f73b23
+- 096 gold4 가장 긴 바이토닉 부분 수열 : https://www.notion.so/11054-8fe8083dc31241058b9fb1f07771b790
