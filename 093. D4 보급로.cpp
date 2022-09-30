@@ -44,7 +44,6 @@ int main() {
 
 		while (!que.empty()) {
 			Node cur = que.top(); que.pop();
-			cout << cur.total << endl;
 			if (cur.x == N - 1 && cur.y == N - 1) {
 				ans = min(ans, cur.total);
 				continue;
