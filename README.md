@@ -29,4 +29,4 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 096 gold4 가장 긴 바이토닉 부분 수열 : https://www.notion.so/11054-8fe8083dc31241058b9fb1f07771b790
 - 097 gold2 후위 표기식 : https://www.notion.so/1918-01b746d47f214148a34f545cb09ebe63
 - 101 gold1 구슬 탈출 2 : https://www.notion.so/13460-2-b528515af0c94797b052c6b36ecd0cdb
-- 103 gold2 2040(Easy) : https://www.notion.so/12100-2048-Easy-712f2835f2444e3799e729d3056fbfc4
+- 104 gold2 2040(Easy) : https://www.notion.so/12100-2048-Easy-712f2835f2444e3799e729d3056fbfc4
