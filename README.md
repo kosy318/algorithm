@@ -30,3 +30,4 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 097 gold2 후위 표기식 : https://www.notion.so/1918-01b746d47f214148a34f545cb09ebe63
 - 101 gold1 구슬 탈출 2 : https://www.notion.so/13460-2-b528515af0c94797b052c6b36ecd0cdb
 - 104 gold2 2040(Easy) : https://www.notion.so/12100-2048-Easy-712f2835f2444e3799e729d3056fbfc4
+- 106 gold2 청소년 상어 : https://www.notion.so/19236-a391d2b4394945a1bec92398c03cb8cc
