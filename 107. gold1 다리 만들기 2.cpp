@@ -53,7 +53,7 @@ void coloring(vector<vector<int>>& map) {
 	}
 }
 
-// 위로 가는 애랑 오른쪽으로 가는 애만 만들거임ㄴ
+// 위로 가는 애랑 오른쪽으로 가는 애만 만들거임
 void build_bridges(vector<vector<int>>& map) {
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < M; j++) {
