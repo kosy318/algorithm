@@ -32,4 +32,5 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 104 gold2 2040(Easy) : https://www.notion.so/12100-2048-Easy-712f2835f2444e3799e729d3056fbfc4
 - 106 gold2 청소년 상어 : https://www.notion.so/19236-a391d2b4394945a1bec92398c03cb8cc
 - 107 gold1 다리 만들기 2 : https://www.notion.so/17472-2-75f5f46da6e54a92906f6f35c769072d
-- 108 gold4 주사위 굴리기 : https://www.notion.so/14499-9eb7262d515e4749beb13cf6528c0191
+- 109 gold4 주사위 굴리기 : https://www.notion.so/14499-9eb7262d515e4749beb13cf6528c0191
+- 110 gold4 테트로미노 : https://www.notion.so/14500-107e796c95be4368aef52465ec8c2dd7
