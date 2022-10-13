@@ -35,3 +35,7 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 110 gold4 테트로미노 : https://www.notion.so/14500-107e796c95be4368aef52465ec8c2dd7
 - 113 gold5 로봇청소기 : https://www.notion.so/14503-818337e3d168471381c49b45302e0eba
 - 117 gold3 사다리 조작 : https://www.notion.so/15683-d8b9e738bacf4158848e8a8e09930804
+- 118 gold4 드래곤 커브 : https://www.notion.so/15685-fcd329cb3bf74e9fb4d9e0a7a269f44d
+- 119 gold3 주사위 굴리기 2 : https://www.notion.so/23288-2-1ce1561890534e019025531422c90f08
+- 120 gold1 마법 상어와 복제 : https://www.notion.so/23290-af1fe99412ff4c4c95eb4ae61cc645ad
+- 121 platinum5 어항 정리 : https://www.notion.so/23291-68f63603463e47c8b27c98b3da719d2d
