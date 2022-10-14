@@ -40,3 +40,5 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 120 gold1 마법 상어와 복제 : https://www.notion.so/23290-af1fe99412ff4c4c95eb4ae61cc645ad
 - 121 platinum5 어항 정리 : https://www.notion.so/23291-68f63603463e47c8b27c98b3da719d2d
 - 122 platinum5 온풍기 안녕! : https://www.notion.so/23289-9cb8f65463eb4a688fb81efa5b15a9f4
+- 123 gold4 미세먼지 안녕! : https://www.notion.so/17144-1340479249da44749bf7386349eec3a1
+- 124 gold1 마법사 상어와 블리자드 : https://www.notion.so/21611-0bd626a5fb8e48b3904c644725d59463
