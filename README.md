@@ -39,3 +39,4 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 119 gold3 주사위 굴리기 2 : https://www.notion.so/23288-2-1ce1561890534e019025531422c90f08
 - 120 gold1 마법 상어와 복제 : https://www.notion.so/23290-af1fe99412ff4c4c95eb4ae61cc645ad
 - 121 platinum5 어항 정리 : https://www.notion.so/23291-68f63603463e47c8b27c98b3da719d2d
+- 122 platinum5 온풍기 안녕! : https://www.notion.so/23289-9cb8f65463eb4a688fb81efa5b15a9f4
