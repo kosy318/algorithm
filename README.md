@@ -42,3 +42,7 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 122 platinum5 온풍기 안녕! : https://www.notion.so/23289-9cb8f65463eb4a688fb81efa5b15a9f4
 - 123 gold4 미세먼지 안녕! : https://www.notion.so/17144-1340479249da44749bf7386349eec3a1
 - 124 gold1 마법사 상어와 블리자드 : https://www.notion.so/21611-0bd626a5fb8e48b3904c644725d59463
+- 125 gold2 스타트 택시 : https://www.notion.so/19238-dfed20e1ca2640b397e62d0f54a29ff4
+- 126 gold5 컨베이어 벨트 위의 로봇(설명 추가 필요) : https://www.notion.so/20055-3a57c7343dd04cadade7f1096051c9db
+- 127 gold2 모노미노도미노 2(설명 추가 필요) : https://www.notion.so/20061-2-b15c4fecb9084db2b34b72ee5760ed7a
+- 128 gold2 상어 중학교(설명 추가 필요) : https://www.notion.so/21609-3bf1520d52404c0892f952874d778be0
