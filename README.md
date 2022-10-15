@@ -28,7 +28,7 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 096 gold4 가장 긴 바이토닉 부분 수열 : https://www.notion.so/11054-8fe8083dc31241058b9fb1f07771b790
 - 097 gold2 후위 표기식 : https://www.notion.so/1918-01b746d47f214148a34f545cb09ebe63
 - 101 gold1 구슬 탈출 2 : https://www.notion.so/13460-2-b528515af0c94797b052c6b36ecd0cdb
-- 104 gold2 2040(Easy)**(설명 추가 필요)** : https://www.notion.so/12100-2048-Easy-712f2835f2444e3799e729d3056fbfc4
+- 104 gold2 2040(Easy) **(설명 추가 필요)** : https://www.notion.so/12100-2048-Easy-712f2835f2444e3799e729d3056fbfc4
 - 106 gold2 청소년 상어 : https://www.notion.so/19236-a391d2b4394945a1bec92398c03cb8cc
 - 107 gold1 다리 만들기 2 : https://www.notion.so/17472-2-75f5f46da6e54a92906f6f35c769072d
 - 109 gold4 주사위 굴리기 : https://www.notion.so/14499-9eb7262d515e4749beb13cf6528c0191
@@ -43,6 +43,6 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 123 gold4 미세먼지 안녕! : https://www.notion.so/17144-1340479249da44749bf7386349eec3a1
 - 124 gold1 마법사 상어와 블리자드 : https://www.notion.so/21611-0bd626a5fb8e48b3904c644725d59463
 - 125 gold2 스타트 택시 : https://www.notion.so/19238-dfed20e1ca2640b397e62d0f54a29ff4
-- 126 gold5 컨베이어 벨트 위의 로봇**(설명 추가 필요)** : https://www.notion.so/20055-3a57c7343dd04cadade7f1096051c9db
-- 127 gold2 모노미노도미노 2**(설명 추가 필요)** : https://www.notion.so/20061-2-b15c4fecb9084db2b34b72ee5760ed7a
-- 128 gold2 상어 중학교**(설명 추가 필요)** : https://www.notion.so/21609-3bf1520d52404c0892f952874d778be0
+- 126 gold5 컨베이어 벨트 위의 로봇 **(설명 추가 필요)** : https://www.notion.so/20055-3a57c7343dd04cadade7f1096051c9db
+- 127 gold2 모노미노도미노 2 **(설명 추가 필요)** : https://www.notion.so/20061-2-b15c4fecb9084db2b34b72ee5760ed7a
+- 128 gold2 상어 중학교 **(설명 추가 필요)** : https://www.notion.so/21609-3bf1520d52404c0892f952874d778be0
