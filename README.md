@@ -46,3 +46,6 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 126 gold5 컨베이어 벨트 위의 로봇 **(설명 추가 필요)** : https://www.notion.so/20055-3a57c7343dd04cadade7f1096051c9db
 - 127 gold2 모노미노도미노 2 **(설명 추가 필요)** : https://www.notion.so/20061-2-b15c4fecb9084db2b34b72ee5760ed7a
 - 128 gold2 상어 중학교 **(설명 추가 필요)** : https://www.notion.so/21609-3bf1520d52404c0892f952874d778be0
+- 129 gold4 카드 정렬하기 : https://www.notion.so/1715-115e8e7c1ad44d8ebea6b09b765afed0
+- 130 gold5 합분해 : https://www.notion.so/2225-a55431cfd7554c8f8a91a0ef8900ae67
+- 131 gold5 수 묶기 : https://www.notion.so/1744-18989b7f640741b9b6310ab958cfcddb
