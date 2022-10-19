@@ -18,7 +18,7 @@ void calc(vector<int>& nums) {
 			}
 			break;
 		}
-		if (nums[idx1] == 1 || nums[idx2] == 1 || nums[idx1] * nums[idx2] < 0 || nums[idx1] >= 0 && nums[idx2] == 0) {
+		if (nums[idx1] == 1 || nums[idx2] == 1) {
 			answer += nums[idx1];
 			idx1 = idx2;
 			idx2 += 1;
