@@ -49,3 +49,4 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 129 gold4 카드 정렬하기 : https://www.notion.so/1715-115e8e7c1ad44d8ebea6b09b765afed0
 - 130 gold5 합분해 : https://www.notion.so/2225-a55431cfd7554c8f8a91a0ef8900ae67
 - 131 gold5 수 묶기 : https://www.notion.so/1744-18989b7f640741b9b6310ab958cfcddb
+- 132 gold4 타일 채우기 : https://www.notion.so/2133-07887fab33154e5697e1ed7573bdd412
