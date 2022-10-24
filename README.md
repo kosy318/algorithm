@@ -50,3 +50,4 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 130 gold5 합분해 : https://www.notion.so/2225-a55431cfd7554c8f8a91a0ef8900ae67
 - 131 gold5 수 묶기 : https://www.notion.so/1744-18989b7f640741b9b6310ab958cfcddb
 - 132 gold4 타일 채우기 : https://www.notion.so/2133-07887fab33154e5697e1ed7573bdd412
+- 133 silver1 종이 접기 : https://www.notion.so/1802-64c80e8bb959462bacc31de96190b11c
