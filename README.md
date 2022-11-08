@@ -55,3 +55,9 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 135 gold4 구간 나누기 : https://www.notion.so/2228-3ade32a0600d4691b125b5afcfe096e4
 - 136 gold5 공통 부분 문자열 : https://www.notion.so/5582-72290a4e24264827adf1a0d931f41c3d
 - 137 gold2 보석 도둑 : https://www.notion.so/1202-cc6c9872139f4d6e92022d13ac8e38bb
+- 138 silver1 쉬운 계단 수 : https://www.notion.so/10844-4c8240353d2e4d15a1a46f7d0d5b780d
+- 139 gold1 계단 수 : https://www.notion.so/1562-0fc802eda1664a0598e71f5356073f4f
+- 140 gold5 숨바꼭질 3 : https://www.notion.so/13549-3-2187925691de42aaa6bb270e45560495
+- 141 gold4 녹색 옷 입은 애가 젤다지 : https://www.notion.so/4485-7ad2ecad25b046cc9d4d4281cd933676
+- 142 gold2 가운데를 말해요 : https://www.notion.so/1655-7065832fcd114431927167bf042d7b2c
+- 143 gold4 부분합 : 
