@@ -6,11 +6,11 @@ int N, S;
 int answer = 0;
 int nums[100000];
 
-void bi_search() {
+void search() {
 	int right = 0, sum = nums[0];
 	for (int left = 0; left < N; left++) {
 		while (right < N) {
-			if (sum >= S) {
+			if (sum >= S) { // 조건을 만족하면
 				if (left == right) {
 					answer = 1;
 					return;
@@ -20,7 +20,8 @@ void bi_search() {
 					break;
 				}
 			}
-			if (answer != 0 && right - left + 1 >= answer) break;
+            // 조건을 만족하지 못했을 때
+			if (answer != 0 && right - left + 1 >= answer) break; // 가지치기1
 			right += 1;
 			sum += nums[right];
 		}
@@ -28,7 +29,7 @@ void bi_search() {
 		while (sum > S) {
 			sum -= nums[right];
 			right -= 1;
-			if (left + 1 == right) break;
+			if (left == right) break; // 가지치기2
 		}
 	}
 }
@@ -43,7 +44,7 @@ int main() {
 		cin >> nums[i];
 	}
 
-	bi_search();
+	search();
 
 	cout << answer;
 }
