@@ -60,4 +60,6 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 140 gold5 숨바꼭질 3 : https://www.notion.so/13549-3-2187925691de42aaa6bb270e45560495
 - 141 gold4 녹색 옷 입은 애가 젤다지 : https://www.notion.so/4485-7ad2ecad25b046cc9d4d4281cd933676
 - 142 gold2 가운데를 말해요 : https://www.notion.so/1655-7065832fcd114431927167bf042d7b2c
-- 143 gold4 부분합 : 
+- 143 gold4 부분합 : https://www.notion.so/1806-2695bb6c28e14a07bbb302bc9233fcea
+- 144 gold4 운동 : https://www.notion.so/1956-0decbc3b4f5840168e9d219e7c1b28e3
+- 145 gold3 교환 : https://www.notion.so/1039-3f97f628f39f472f8ac1e84c16fcb2a6
