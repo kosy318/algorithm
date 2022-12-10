@@ -67,3 +67,4 @@ explanation(KOREAN) : https://jolly-note.tistory.com/category/coding/algorithm
 - 147 gold3 문자판 : https://www.notion.so/2186-481bb767fb094abe81ca9f2a04f14ea4
 - 148 gold2 택배 : https://www.notion.so/8980-95e0f10ca9c6403285cee2b65796a895
 - 149 gold5 A와 B 2 : https://www.notion.so/12919-A-B-2-a350d29f673347b9af5bc3d613b27b40
+- 150 gold5 MooTube (Silver) : https://www.notion.so/MooTube-Silver-4352c6d2196c4a6898af34088af4b48e
