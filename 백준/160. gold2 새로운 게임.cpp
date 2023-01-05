@@ -63,12 +63,6 @@ int move() {
 
 				// 이동하려는 칸이 파란색인 경우 이동하지 않고 방향만 반대로 바꾼다.
 				if ((nx < 0 || ny < 0 || nx >= N || ny >= N) || color[nx][ny] == 2) {
-					if (dir == 1 || dir == 3)
-						dir += 1;
-					else dir -= 1;
-
-					// 방향 바꾸고 끝
-					piece.second[0].dir = dir;
 					continue;
 				}
 
