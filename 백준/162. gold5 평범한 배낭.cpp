@@ -17,12 +17,12 @@ int main() {
 	}
 
 
-	int dp[101][100001];
+	vector<vector<int>> dp(N+1, vector<int>(weight_limit+1)); // dp[i][j]: j번 무게 까지 버틸 수 있을 때, i번 물건까지 고려한 최대 가치
 	// dp[i][j] = max(dp[i-1][j], dp[i-1][j-weight[i]] + value[i]); j무게까지 버틸 수 있을 때, (i를 안넣은 것) vs (i를 넣은 것)
 
 	for (int i = 1; i <= N; i++) {
 		for (int j = 1; j <= weight_limit; j++) {
-			if (j - weight[i] >= 0) dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weight[i]] + value[i]);
+			if(j-weight[i] >= 0) dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weight[i]] + value[i]);
 			else dp[i][j] = dp[i - 1][j]; // i번째 물건이 무거워서 들어갈 수 없다면
 		}
 	}
