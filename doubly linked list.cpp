@@ -9,7 +9,7 @@ struct NODE {
 	NODE* next;
 	NODE() {}
 	NODE(int value, NODE* prev, NODE* next) : value(value), prev(prev), next(next) {}
-}*head; // head node 만들어놓음
+}*head, *tail; // head node 만들어놓음
 
 int cnt; // linked list node 개수
 
@@ -20,7 +20,10 @@ void add(int x) { // 맨 뒤에 추가
 		cur = head; // 현재 위치 head로 입력
 	}
 	else { // 한개 이상의 데이터가 들어있음
+		for (int i = 0; i < cnt; i++) // 맨 뒤 node로 이동
+			cur = cur->next;
 		cur->next = new NODE(x, cur, 0);
+		cur->next->prev = cur; // next node의 prev node를 cur로 설정
 		cur = cur->next; // 현재 위치를 다음 위치로 입력
 	}
 
@@ -56,9 +59,9 @@ void insertData(int idx, int x) { // idx번 인덱스 앖에 x의 값을 추가, 즉 x의 값�
 	cnt++; // linked list node 개수 증가
 }
 
-void deleteData(int idx, int x) {
+void deleteData(int idx) { // idx 위치의 node 삭제
 	NODE* cur = head;
-	while (x--) cur = cur->next; // 지울 node로 이동
+	while (idx--) cur = cur->next; // 지울 node로 이동
 	NODE* prev = cur->prev, *next = cur->next;
 	if (prev) prev->next = next; // 지울 node가 head가 아니어서 전 node가 존재한다면 prev node와 next node를 연결해줌
 	else head = next; // 지울 node가 head여서 전 node가 존재하지 않는다면 head를 갱신해준다.
