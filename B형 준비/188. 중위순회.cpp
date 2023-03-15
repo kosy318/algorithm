@@ -3,6 +3,9 @@
  * 1. 연결그래프
  * 2. 싸이클이 없다
  * 3. 정점 - 간선 = 1
+ *
+ * 완전 이진 트리?
+ * 단말 노드를 제외한 모든 정점이 자식 노드를 2개 가져야하고 왼쪽부터 차야한다.
  */
 
 #include <iostream>
@@ -14,6 +17,7 @@ using namespace std;
 char* arr;
 int n;
 
+// 완전 이진 트리 특성 활용
 void dfs(int cur) {
     if (cur > n) return;
 
