@@ -282,10 +282,8 @@ int main()
 	setbuf(stdout, NULL);
 	freopen("sample_input_list_copy.txt", "r", stdin);
 
-
 	int T, MARK;
 	scanf_s("%d %d", &T, &MARK);
-	cout << T << " " << MARK << endl;
 
 	for (int tc = 1; tc <= T; tc++) {
 		int score = run() ? MARK : 0;
