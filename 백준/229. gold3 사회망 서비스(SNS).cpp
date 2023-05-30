@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <queue>
 #include <algorithm>
 
 using namespace std;
@@ -13,7 +12,10 @@ vector<vector<int>> adj_list;
 void dfs(int cur){
     dp[cur] = {0, 1};
 
-    if (adj_list[cur].size() == 1) return; // leaf node
+    if (adj_list[cur].size() == 1) {
+        // cout << "dp[" << cur << "] " << dp[cur][0] << ", " << dp[cur][1] << endl;
+        return; // leaf node
+    }
 
     for (int adj: adj_list[cur]) {
         if(dp[adj][0] == -1){ // ÀÚ½Ä node
@@ -23,7 +25,7 @@ void dfs(int cur){
         }
     }
 
-    cout << "dp[" << cur << "] " <<
+    // cout << "dp[" << cur << "] " << dp[cur][0] << ", " << dp[cur][1] << endl;
 }
 
 int main(){
