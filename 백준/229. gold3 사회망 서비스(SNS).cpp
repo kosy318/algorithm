@@ -9,13 +9,9 @@ using namespace std;
 vector<vector<int>> dp;
 vector<vector<int>> adj_list;
 
+///////////// 2 1 2 인 경우 틀림 : adj_list size가 1인 경우 leaf node라고 판단한 부분이 틀림. 따로 판단할 필요 x
 void dfs(int cur){
     dp[cur] = {0, 1};
-
-    if (adj_list[cur].size() == 1) {
-        // cout << "dp[" << cur << "] " << dp[cur][0] << ", " << dp[cur][1] << endl;
-        return; // leaf node
-    }
 
     for (int adj: adj_list[cur]) {
         if(dp[adj][0] == -1){ // 자식 node
@@ -44,13 +40,6 @@ int main(){
 
         adj_list[u].push_back(v);
         adj_list[v].push_back(u);
-    }
-
-    queue<int> que;
-    for (int i = 1; i <= N; i++) {
-        if (adj_list[i].size() == 1) {
-            que.push(i);
-        }
     }
 
     dfs(1);
