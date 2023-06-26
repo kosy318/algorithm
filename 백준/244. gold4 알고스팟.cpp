@@ -5,13 +5,6 @@
 
 using namespace std;
 
-struct Room{
-    int x, y;
-    int broke;
-
-    Room(int x, int y, int broke): x{x}, y{y}, broke{broke}{}
-};
-
 int N, M;
 vector<string> maze;
 
@@ -22,25 +15,25 @@ int bfs(){
     vector<vector<int>> broke_cnt(N, vector<int>(M, 10000));
     broke_cnt[0][0] = 0;
 
-    deque<Room> deq;
-    deq.push_back(Room(0, 0, 0));
+    deque<pair<int, int>> deq;
+    deq.emplace_back(0, 0);
 
     while(!deq.empty()) {
-        Room cur = deq.front();
+        auto cur = deq.front();
         deq.pop_front();
 
-        if(cur.x == N-1 && cur.y == M-1) return cur.broke;
+        if(cur.first == N-1 && cur.second == M-1) return broke_cnt[cur.first][cur.second];
 
         for (int d = 0; d < 4; d++) {
-            int nx = cur.x + dx[d];
-            int ny = cur.y + dy[d];
+            int nx = cur.first + dx[d];
+            int ny = cur.second + dy[d];
 
             if (nx < 0 || ny < 0 || nx >= N || ny >= M) continue; // ¹üÀ§ ¹þ¾î³²
 
-            if(broke_cnt[nx][ny] > cur.broke + (maze[nx][ny] - '0')) {
-                broke_cnt[nx][ny] = cur.broke + (maze[nx][ny] - '0');
-                if(maze[nx][ny] == '0') deq.push_front(Room(nx, ny, cur.broke));
-                else deq.push_back(Room(nx, ny, cur.broke + 1));
+            if(broke_cnt[nx][ny] > broke_cnt[cur.first][cur.second] + (maze[nx][ny] - '0')) {
+                broke_cnt[nx][ny] = broke_cnt[cur.first][cur.second] + (maze[nx][ny] - '0');
+                if(maze[nx][ny] == '0') deq.emplace_front(nx, ny);
+                else deq.emplace_back(nx, ny);
             }
         }
     }
