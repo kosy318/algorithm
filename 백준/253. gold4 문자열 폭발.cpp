@@ -1,43 +1,36 @@
 #include <iostream>
 #include <string>
-#include <list>
+#include <deque>
 
 using namespace std;
 
 string inp, bomb;
-list<char> inp_list;
+deque<pair<char, int>> inp_que;
+
+void pop_bomb();
 
 // 폭발 문자열은 같은 문자를 두 개 이상 포함하지 않는다 -> 폭발 문자열 두 개가 겹칠 일이 없다.
-bool find_bomb(){
-    bool found = false;
-
-    list<char>::iterator start_iter;
+void find_bomb(){
     int idx = 0;
-    int inp_list_idx = 0;
-    for(auto iter = inp_list.begin(); iter != inp_list.end(); iter++){
-        if(idx == bomb.size()){
-            inp_list.erase(start_iter, iter);
-            idx = 0;
-            found = true;
+    for (char ch: inp) {
+        if(bomb[0] == ch) idx = 1;
+        else if(bomb[idx] == ch) idx += 1;
+        else idx = 0;
+
+        inp_que.emplace_back(ch, idx);
+
+        if (idx == bomb.size()) {
+            pop_bomb();
+            if(!inp_que.empty()) idx = inp_que.back().second;
+            else idx = 0;
         }
-
-        if(*iter == bomb[0]) {
-            start_iter = iter;
-            idx = 1;
-        } else if(*iter == bomb[idx]) {
-            idx += 1;
-        } else {
-            idx = 0;
-        }
-        inp_list_idx++;
     }
+}
 
-    if(idx == bomb.size()){
-        inp_list.erase(start_iter, inp_list.end());
-        found = true;
+void pop_bomb() {
+    for (int i = 0; i < bomb.size(); i++) {
+        inp_que.pop_back();
     }
-
-    return found;
 }
 
 int main(){
@@ -47,13 +40,13 @@ int main(){
 
     cin >> inp >> bomb;
 
-    inp_list.assign(inp.begin(), inp.end());
+    find_bomb();
 
-    while(find_bomb()){}
-
-    if(inp_list.empty()) cout << "FRULA";
+    if(inp_que.empty()) cout << "FRULA";
     else {
-        for (char ch: inp_list)
-            cout << ch;
+        while(!inp_que.empty()){
+            cout << inp_que.front().first;
+            inp_que.pop_front();
+        }
     }
 }
