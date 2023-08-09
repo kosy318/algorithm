@@ -30,12 +30,13 @@ int binary_search(){
     while(left <= right){
         int cnt = 1; // 첫번째 집 무조건 포함
         int mid = (left + right) / 2;
-        int set = house[0]; // 마지막으로 공유기가 설치된 장소
+        int dis = 0;
 
         for(int i=1; i<N; i++){
-            if(house[i] - set >= mid) {
+            dis += house[i] - house[i-1];
+            if(dis >= mid) {
                 cnt += 1;
-                set = house[i]; // 마지막으로 공유기가 설치된 장소 갱신
+                dis = 0;
             }
         }
 
