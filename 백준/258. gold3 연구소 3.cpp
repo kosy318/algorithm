@@ -3,12 +3,10 @@
 
 using namespace std;
 
-/* 내가 틀린 예제
-4 2
-0 1 1 0
-2 1 1 2
-2 1 1 2
-0 1 1 0
+/* 내가 틀린 부분
+ * * 바이러스가 연속으로 있는 경우도 다음 것을 활성화 시키는 데에 시간이 1 씩 더 든다
+ * * 활성화 되지 않은 바이러스더라도 퍼져있는 것으로 본다.
+ * * que가 empty인 것도 다 퍼뜨린 조건으로 생각했는데, 빈 칸을 다 채우고 비활성화된 바이러스만 que에 남아있는 경우도 존재할 수 있으므로 que.empty()는 조건에 넣으면 안된다.
 */
 
 struct Point{
@@ -36,28 +34,6 @@ vector<Point> activate;
 
 int answer = 3000;
 
-void activate_virus(vector<vector<bool>> &visited, priority_queue<pair<Point, int>, vector<pair<Point, int>>, comp> &que, const Point &next, int time, int& cnt) {
-    visited[next.x][next.y] = true;
-    cnt += 1;
-
-    bool pushed = false;
-    for (int d = 0; d < 4; d++) {
-        int nx = next.x + dx[d];
-        int ny = next.y + dy[d];
-
-        if(nx < 0 || ny < 0 || nx >= N || ny >= N) continue;
-        if(visited[nx][ny] || lab[nx][ny] == 1) continue;
-
-        if(lab[nx][ny] == 0 && !pushed) {
-            que.emplace(next, time);
-            pushed = true;
-        }
-        else if(lab[nx][ny] == 2){ // 비활성 바이러스가 있는 곳
-            activate_virus(visited, que, Point(nx, ny), time, cnt);
-        }
-    }
-}
-
 void spread(vector<vector<bool>> &visited, priority_queue<pair<Point, int>, vector<pair<Point, int>>, comp> &que, const Point &cur, int time, int& cnt) {
     for (int d = 0; d < 4; d++) {
         int nx = cur.x + dx[d];
@@ -68,15 +44,7 @@ void spread(vector<vector<bool>> &visited, priority_queue<pair<Point, int>, vect
 
         visited[nx][ny] = true;
 
-        if(lab[nx][ny] == 0) {
-            cnt += 1;
-            que.emplace(Point(nx, ny), time + 1);
-        }
-        // 비활성 바이러스가 활성상태로 변한다면 닿자마자 바로 사방으로 또 퍼져야하는걸까?
-        else if(lab[nx][ny] == 2){ // 비활성 바이러스가 있는 곳
-            // 첫번째 틀린 곳. 문제가 이해하기 너무 어려움..
-            activate_virus(visited, que, Point(nx, ny), time + 1, cnt);
-        }
+        que.emplace(Point(nx, ny), time + 1);
     }
 }
 
@@ -88,19 +56,19 @@ int spread_virus() { // bfs
     for(Point& p: activate){
         que.emplace(p, 0);
         visited[p.x][p.y] = true;
-        cnt += 1;
     }
 
     while (true) {
         auto [cur, time] = que.top(); que.pop();
-        if(time >= answer) return answer;
+//        cout << cur.x << ", " << cur.y << " time: " << time << endl;
+        if(lab[cur.x][cur.y] == 0) cnt += 1;
 
         spread(visited, que, cur, time, cnt);
 
-        if(cnt == totalCnt && que.empty()){
+        if(cnt == totalCnt){ // 틀린 부분 : que가 empty일 필요가 없음 (비활성 virus가 남아있을 수 있음)
 //            cout << time << endl;
             return time;
-        } else if(cnt != totalCnt && que.empty()){
+        } else if(time >= answer || que.empty()){
 //            cout << -1 << endl;
             return 3000;
         }
@@ -111,9 +79,6 @@ void comb(int cnt = 0, int start = 0){
     if(cnt == M){
         // TODO: 조합 생성 완료 -> 선택한 바이러스 기준으로 퍼트리기
 //        cout << "start" << endl;
-//        for (Point p: activate) {
-//            cout << p.x << ", " << p.y << endl;
-//        }
         answer = min(spread_virus(), answer);
     }
     else {
@@ -136,8 +101,15 @@ void input() {
             if(lab[i][j] == 2){
                 virus_point.emplace_back(i, j);
             }
-            if(lab[i][j] != 1) totalCnt += 1;
+            // 틀린 부분 : 활성화된 바이러스가 아니라 비활성화된 바이러스가 놓여있는 것도 퍼뜨린 것에 해당됨
+            if(lab[i][j] == 0) totalCnt += 1;
         }
+    }
+//    cout << "totalCnt: " << totalCnt << endl;
+
+    if(totalCnt == 0){
+        cout << 0;
+        exit(0);
     }
 }
 
