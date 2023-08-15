@@ -16,12 +16,6 @@ struct Point{
     Point() {}
 };
 
-struct comp {
-    bool operator()(const std::pair<Point, int>& a, const std::pair<Point, int>& b) {
-        return a.second > b.second; // 오름차순으로 정렬
-    }
-};
-
 int N, M; // N := 연구실 사이즈, M := 활성화 시킬 수 있는 바이러스 개수
 vector<vector<int>> lab;
 
@@ -34,7 +28,7 @@ vector<Point> activate;
 
 int answer = 3000;
 
-void spread(vector<vector<bool>> &visited, priority_queue<pair<Point, int>, vector<pair<Point, int>>, comp> &que, const Point &cur, int time, int& cnt) {
+void spread(vector<vector<bool>> &visited, queue<pair<Point, int>> &que, const Point &cur, int time, int& cnt) {
     for (int d = 0; d < 4; d++) {
         int nx = cur.x + dx[d];
         int ny = cur.y + dy[d];
@@ -50,7 +44,7 @@ void spread(vector<vector<bool>> &visited, priority_queue<pair<Point, int>, vect
 
 int spread_virus() { // bfs
     vector<vector<bool>> visited(N, vector<bool>(N, false));
-    priority_queue<pair<Point, int>, vector<pair<Point, int>>, comp> que; // second := 시간
+    queue<pair<Point, int>> que; // second := 시간
     int cnt = 0;
 
     for(Point& p: activate){
@@ -59,7 +53,7 @@ int spread_virus() { // bfs
     }
 
     while (true) {
-        auto [cur, time] = que.top(); que.pop();
+        auto [cur, time] = que.front(); que.pop();
 //        cout << cur.x << ", " << cur.y << " time: " << time << endl;
         if(lab[cur.x][cur.y] == 0) cnt += 1;
 
