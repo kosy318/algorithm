@@ -1,39 +1,28 @@
 #include <iostream>
 #include <string>
-#include <set>
+#include <map>
 
 using namespace std;
 
+int N, M;
+
 struct Node{
-    string name;
-    set<Node> child;
+    map<string, Node> child;
 
-    Node() = default;
-    Node(string &name) : name(name) {}
-
-    bool operator < (const Node& n1) const {
-        return name < n1.name;
-    }
-
-    bool operator==(const Node &rhs) const {
-        return name == rhs.name;
-    }
-
-    bool operator!=(const Node &rhs) const {
-        return !(rhs == *this);
-    }
+    Node() {}
 } head;
 
-void print_tree(const Node& node = head, int depth = 0) {
-    for(const Node& child: node.child){
-        for(int i=0; i<depth; i++) cout << "--";
-        cout << child.name << "\n";
+void insert_name(Node& node = head, int idx = 0);
 
-        print_tree(child);
+void print_tree(const Node& node = head, int depth = 0) {
+    for(const auto& child: node.child){
+        for(int i=0; i<depth; i++) cout << "--";
+        cout << child.first << "\n";
+
+        print_tree(child.second, depth + 1);
     }
 }
 
-int N;
 
 int main(){
     ios::sync_with_stdio(false);
@@ -41,22 +30,23 @@ int main(){
 
     cin >> N;
     for (int i = 0; i < N; i++) {
-        int M;
         cin >> M;
 
-        Node cur = head;
-        for (int j = 0; j < M; j++) {
-            string name;
-            cin >> name;
-
-            if(cur.child.find(Node(name)) == cur.child.end()){
-                cout << name << " inserted\n";
-                cur.child.insert(Node(name));
-            }
-            cur = *cur.child.find(Node(name));
-        }
+        insert_name();
     }
 
-    cout << head.child.size() << endl;
     print_tree();
+}
+
+void insert_name(Node& node, int idx) {
+    if(idx == M) return;
+
+    string name;
+    cin >> name;
+
+    if(node.child.find(name) == node.child.end()) {
+        node.child[name] = Node();
+    }
+
+    insert_name(node.child[name], idx + 1);
 }
